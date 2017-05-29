@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE process SYSTEM "ProcessDefinition.dtd">
+<process name="%SERVICE_NAME%_%METHOD_NAME%" default_retries="2" default_timeout="1000">  
+    <state name="start">
+      <component-affinity component="AffinityMethods" method="CacheAffinity">
+        <resource-argument request-key="cacheItems"/>
+        <rank-argument rank-type="maxWeight"/>
+      </component-affinity>
+      <component-action component="%SERVICE_NAME%" method="%METHOD_NAME%">
+        <arguments>
+          <argument expression="request['parameters']"/>
+          <argument expression="request['sessionData']"/>
+        </arguments>
+        <return-value expression="request['result']" />
+      </component-action>
+      <arc task-status="complete" next-state="finish"/>
+    </state>
+</process>

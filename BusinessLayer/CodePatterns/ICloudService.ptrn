@@ -1,0 +1,9 @@
+using System;
+using IFS.Interfaces.CloudContracts.DataContracts;
+
+namespace IFS.Interfaces.CloudContracts%NAMESPACE_NAME%
+{
+    public interface I%SERVICE_NAME%
+    {
+    }
+}

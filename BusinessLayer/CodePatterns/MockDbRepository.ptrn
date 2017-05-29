@@ -1,0 +1,15 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using IFS.DataAccess.Entity;
+using IFS.Interfaces.DbRepository;
+using IFS.Interfaces.Entity;
+using IFS.NUnitTests.MockResults;
+
+namespace IFS.NUnitTests.DbRepository
+{
+    public class Mock%DB_REPOSITORY_NAME%: MockDbRepository, I%DB_REPOSITORY_NAME%
+    {
+    }
+}

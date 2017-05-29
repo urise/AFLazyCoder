@@ -1,0 +1,20 @@
+﻿<root>
+  <directory>..\..\..\..\AlphaFrontier\Source</directory>
+  <command>SearchPattern</command>
+  <pattern>\bstatic\b</pattern>
+  <include>
+    <string>*.cs</string>
+  </include>
+  <exclude>
+    <string>*.Designer.cs</string>
+    <string>*.g.cs</string>
+    <string>*\IFS.NUnitTests\*</string>
+    <string>*\IFS.PerformanceTests\*</string>
+	<string>*\DataScript\*</string>
+  </exclude>
+  <reports>
+    <report>
+      <outputfilename>ResultStatics.txt</outputfilename>
+    </report>
+  </reports>
+</root>

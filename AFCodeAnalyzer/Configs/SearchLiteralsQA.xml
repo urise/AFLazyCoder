@@ -1,0 +1,23 @@
+﻿<root>
+  <directory>..\..\..\..\QA_Telerik_MSpec</directory>
+  <command>SearchLiterals</command>
+  <include>
+    <string>*.cs</string>
+  </include>
+  <exclude>
+  </exclude>
+  <reports>
+    <report>
+      <isdetailed>true</isdetailed>
+      <order>Quantity</order>
+      <quantitylimit>2</quantitylimit>
+      <outputfilename>ResultLiteralsByQuantityQA.txt</outputfilename>
+    </report>
+    <report>
+      <isdetailed>true</isdetailed>
+      <order>Length</order>
+      <quantitylimit>2</quantitylimit>
+      <outputfilename>ResultLiteralsByLengthQA.txt</outputfilename>
+    </report>
+  </reports>
+</root>

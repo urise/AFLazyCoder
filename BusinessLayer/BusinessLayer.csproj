@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F16E1ED2-ED8A-4FD0-90CF-9328886A4C10}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLayer</RootNamespace>
+    <AssemblyName>BusinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdParty\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.Extended, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdParty\NLog.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalyzeResults\IAnalyzeResult.cs" />
+    <Compile Include="AnalyzeResults\IAnalyzeResultFull.cs" />
+    <Compile Include="AnalyzeResults\IAnalyzeCompareResults.cs" />
+    <Compile Include="CodeAnalyzer\Searching\PlaceReportInfo.cs" />
+    <Compile Include="CodeAnalyzer\Searching\SearchReportParameters.cs" />
+    <Compile Include="CodeAnalyzer\Searching\TextSearcher.cs" />
+    <Compile Include="CodeAnalyzer\Searching\PlaceInfo.cs" />
+    <Compile Include="CodeClasses\CodeHelper.cs" />
+    <Compile Include="CodeClasses\IMethodData.cs" />
+    <Compile Include="CodeClasses\MethodParser.cs" />
+    <Compile Include="CodeClasses\PlaceInFile.cs" />
+    <Compile Include="Common\CustomException.cs" />
+    <Compile Include="Comparison\ListsComparer.cs" />
+    <Compile Include="Helpers\AppConfiguration.cs" />
+    <Compile Include="Helpers\SvnHelper.cs" />
+    <Compile Include="Helpers\TextHelper.cs" />
+    <Compile Include="InfoClasses\CloudServiceInfo.cs" />
+    <Compile Include="InfoClasses\Common\ProgramParameter.cs" />
+    <Compile Include="InfoClasses\Common\ProgramParameters.cs" />
+    <Compile Include="Managers\CloudServiceManager.cs" />
+    <Compile Include="Managers\DbRepositoryManager.cs" />
+    <Compile Include="Managers\IManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodePatterns\CloudService.ptrn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CodePatterns\CloudServiceProxy.ptrn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CodePatterns\CommonUsing.ptrn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CodePatterns\DbRepository.ptrn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CodePatterns\DbRepositoryFactoryMethod.ptrn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CodePatterns\DbRepositoryInterface.ptrn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CodePatterns\ICloudService.ptrn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CodePatterns\MockDbRepository.ptrn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CodePatterns\ProcessFlow.ptrn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

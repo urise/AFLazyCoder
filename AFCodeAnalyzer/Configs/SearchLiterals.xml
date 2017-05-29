@@ -1,0 +1,27 @@
+﻿<root>
+  <directory>..\..\..\..\AlphaFrontier\Source</directory>
+  <command>SearchLiterals</command>
+  <include>
+    <string>*.cs</string>
+  </include>
+  <exclude>
+    <string>*.Designer.cs</string>
+    <string>*.g.cs</string>
+    <string>*\IFS.NUnitTests\*</string>
+    <string>*\IFS.PerformanceTests\*</string>
+  </exclude>
+  <reports>
+    <report>
+      <isdetailed>true</isdetailed>
+      <order>Quantity</order>
+      <quantitylimit>2</quantitylimit>
+      <outputfilename>ResultLiteralsByQuantity.txt</outputfilename>
+    </report>
+    <report>
+      <isdetailed>true</isdetailed>
+      <order>Length</order>
+      <quantitylimit>2</quantitylimit>
+      <outputfilename>ResultLiteralsByLength.txt</outputfilename>
+    </report>
+  </reports>
+</root>

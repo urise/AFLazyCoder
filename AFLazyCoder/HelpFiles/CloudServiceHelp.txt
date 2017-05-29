@@ -1,0 +1,14 @@
+# Adding class to the root cloud service folder
+SomeNewClass
+
+#Adding class to the subfolder
+SubFolder\AnotherSubFolder\SomeNewClass
+
+#Adding class inherited not from BaseCloudClass
+SomeNewClass:SomeBaseClass
+
+#Adding class to the subfolder inherited not from BaseCloudClass
+SubFolder\AnotherSubFolder\SomeNewClass:SomeBaseClass
+
+#Choose service and write method signature (without "public"):
+FabricRequestResult NewMethod(NewParameters parameters, SessionData sessionData)

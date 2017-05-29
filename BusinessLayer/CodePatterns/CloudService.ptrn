@@ -1,0 +1,12 @@
+using System;
+using IFS.Interfaces.CloudContracts;
+using IFS.Interfaces.CloudContracts%NAMESPACE_NAME%;
+using IFS.BusinessLayer.CloudServices;
+using IFS.Interfaces.CloudContracts.DataContracts;
+
+namespace IFS.BusinessLayer.CloudServices%NAMESPACE_NAME%
+{
+    public class %SERVICE_NAME%:CloudServiceBase,I%SERVICE_NAME%
+    {
+    }
+}

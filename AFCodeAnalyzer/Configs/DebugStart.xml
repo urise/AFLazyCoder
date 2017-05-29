@@ -1,0 +1,8 @@
+﻿<root>
+  <WorkingFolder>d:\CodeAnalyzer\AAS</WorkingFolder>
+  <HtmlReportFolder>d:\CodeAnalyzer\AAS\HtmlReport</HtmlReportFolder>
+  <ReportDepthLimit>20</ReportDepthLimit>
+  <ExecuteType>SearchDuplicates</ExecuteType>
+  <ExecuteConfig>Configs\SearchDuplicates.xml</ExecuteConfig>
+  <RevisionGetMethod>Incremental</RevisionGetMethod>
+</root>

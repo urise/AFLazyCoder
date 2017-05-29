@@ -1,0 +1,19 @@
+﻿<root>
+  <directory>d:\work\AAS</directory>
+  <command>SearchDuplicates</command>
+  <include>
+    <string>*.cs</string>
+  </include>
+  <exclude>
+    <string>*.Designer.cs</string>
+    <string>*.g.cs</string>
+    <string>*\IFS.NUnitTests\*</string>
+    <string>*\IFS.PerformanceTests\*</string>
+	<string>*\Reference.cs</string>
+	<string>*\AssemblyInfo.cs</string>
+	<string>*\DataScript\*</string>
+	<string>*\IFS.DataAccess\Entity\*</string>
+	<string></string>
+	<string></string>
+  </exclude>
+</root>

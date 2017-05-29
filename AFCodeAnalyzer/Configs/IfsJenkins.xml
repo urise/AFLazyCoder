@@ -1,0 +1,7 @@
+<root>
+	<WorkingFolder>d:\CodeAnalyzer\AFStaging</WorkingFolder>
+	<HtmlReportFolder>HtmlReport</HtmlReportFolder>
+	<ReportDepthLimit>20</ReportDepthLimit>
+	<ExecuteType>SearchDuplicates</ExecuteType>
+	<ExecuteConfig>AFLazyCoder\AFCodeAnalyzer\bin\debug\Configs\IfsSearchDuplicates.xml</ExecuteConfig>
+</root>

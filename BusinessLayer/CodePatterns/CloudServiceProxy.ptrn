@@ -1,0 +1,11 @@
+using System;
+using IFS.Interfaces.CloudContracts;
+using IFS.Interfaces.CloudContracts%NAMESPACE_NAME%;
+using IFS.Interfaces.CloudContracts.DataContracts;
+
+namespace IFS.CloudProxies%NAMESPACE_NAME%
+{
+    public class %SERVICE_NAME%Proxy : CloudProxyBase, I%SERVICE_NAME%
+    {
+    }
+}

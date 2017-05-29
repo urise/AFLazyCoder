@@ -1,0 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using IFS.DataAccess.Entity;
+using IFS.Interfaces.DbRepository;
+using IFS.Interfaces.Entity;
+
+namespace IFS.DbRepository
+{
+    public class %DB_REPOSITORY_NAME%: DbRepository, I%DB_REPOSITORY_NAME%
+    {
+    }
+}

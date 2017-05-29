@@ -1,0 +1,5 @@
+public static I%DB_REPOSITORY_NAME% Get%DB_REPOSITORY_NAME%()
+{
+	IApplicationContext ctx = ContextRegistry.GetContext();
+    return (I%DB_REPOSITORY_NAME%)ctx.GetObject("%DB_REPOSITORY_NAME%");
+}
